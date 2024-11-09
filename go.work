@@ -1,0 +1,10 @@
+go 1.22.2
+
+use (
+	.
+	./log/logging/logrus
+	./log/logging/slog
+	./log/logging/zap
+	./log/logging/zerolog
+	./otellog
+)
