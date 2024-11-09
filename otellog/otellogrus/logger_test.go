@@ -16,10 +16,11 @@ package otellogrus_test
 
 import (
 	"context"
-	"github.com/cloudwego-contrib/cwgo-pkg/telemetry/otellogrus"
 	"testing"
 
-	"github.com/cloudwego-contrib/cwgo-pkg/log/logging"
+	"github.com/kanhai-syd/hailog/telemetry/otellogrus"
+
+	"github.com/kanhai-syd/hailog/log/logging"
 
 	"github.com/sirupsen/logrus"
 	"go.opentelemetry.io/otel"

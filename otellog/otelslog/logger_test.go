@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cloudwego-contrib/cwgo-pkg/log/logging"
-	cwslog "github.com/cloudwego-contrib/cwgo-pkg/log/logging/slog"
+	"github.com/kanhai-syd/hailog/log/logging"
+	cwslog "github.com/kanhai-syd/hailog/logging/slog"
 	"github.com/stretchr/testify/assert"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"

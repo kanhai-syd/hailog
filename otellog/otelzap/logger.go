@@ -18,8 +18,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/cloudwego-contrib/cwgo-pkg/log/logging"
-	cwzap "github.com/cloudwego-contrib/cwgo-pkg/logging/zap"
+	"github.com/kanhai-syd/hailog/log/logging"
+	cwzap "github.com/kanhai-syd/hailog/logging/zap"
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/trace"
 	"go.uber.org/zap"

@@ -17,7 +17,7 @@ package slog
 import (
 	"log/slog"
 
-	"github.com/cloudwego-contrib/cwgo-pkg/log/logging"
+	"github.com/kanhai-syd/hailog/log/logging"
 )
 
 // Adapt log level to otelslog level

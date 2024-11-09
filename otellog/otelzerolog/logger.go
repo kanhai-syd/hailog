@@ -15,7 +15,7 @@
 package otelzerolog
 
 import (
-	cwzerolog "github.com/cloudwego-contrib/cwgo-pkg/logging/zerolog"
+	cwzerolog "github.com/kanhai-syd/hailog/logging/zerolog"
 )
 
 type Logger struct {

@@ -15,7 +15,7 @@
 package otelzap
 
 import (
-	cwzap "github.com/cloudwego-contrib/cwgo-pkg/logging/zap"
+	cwzap "github.com/kanhai-syd/hailog/logging/zap"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

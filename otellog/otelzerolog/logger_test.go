@@ -19,8 +19,8 @@ import (
 	"context"
 	"testing"
 
-	logging "github.com/cloudwego-contrib/cwgo-pkg/log/logging"
-	cwzerolog "github.com/cloudwego-contrib/cwgo-pkg/logging/zerolog"
+	logging "github.com/kanhai-syd/hailog/log/logging"
+	cwzerolog "github.com/kanhai-syd/hailog/logging/zerolog"
 
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"

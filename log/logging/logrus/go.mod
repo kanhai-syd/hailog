@@ -1,11 +1,10 @@
-module github.com/kanhai-syd/hailog/logrus
+module github.com/kanhai-syd/hailog/logging/logrus
 
 go 1.21
 
-require github.com/sirupsen/logrus v1.9.2
-
 require (
-	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
-	golang.org/x/sys v0.13.0 // indirect
+	github.com/kanhai-syd/hailog v0.0.0-20241109084732-f27744112296
+	github.com/sirupsen/logrus v1.9.3
 )
+
+require golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect

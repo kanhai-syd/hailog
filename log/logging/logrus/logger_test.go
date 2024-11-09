@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cloudwego-contrib/cwgo-pkg/log/logging"
+	"github.com/kanhai-syd/hailog/log/logging"
 
-	cwlogrus "github.com/cloudwego-contrib/cwgo-pkg/logging/logrus"
+	cwlogrus `github.com/kanhai-syd/hailog/logging/logrus`
 
 	"github.com/sirupsen/logrus"
 )

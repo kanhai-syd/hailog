@@ -22,7 +22,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/cloudwego-contrib/cwgo-pkg/log/logging"
+	"github.com/kanhai-syd/hailog/log/logging"
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"

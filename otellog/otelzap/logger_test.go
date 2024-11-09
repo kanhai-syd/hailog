@@ -19,7 +19,7 @@ import (
 	"context"
 	"testing"
 
-	logging "github.com/cloudwego-contrib/cwgo-pkg/log/logging"
+	logging "github.com/kanhai-syd/hailog/log/logging"
 
 	"github.com/stretchr/testify/assert"
 	"go.opentelemetry.io/otel"
