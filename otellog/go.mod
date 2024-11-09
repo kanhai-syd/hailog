@@ -1,4 +1,4 @@
-module github.com/cloudwego-contrib/cwgo-pkg/telemetry
+module github.com/kanhai-syd/hailog/telemetry
 
 go 1.21.12
 

@@ -1,4 +1,4 @@
-module github.com/cloudwego-contrib/cwgo-pkg/logging/logrus
+module github.com/kanhai-syd/hailog/logrus
 
 go 1.21
 
