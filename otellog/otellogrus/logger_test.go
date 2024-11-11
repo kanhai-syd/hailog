@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/kanhai-syd/hailog/telemetry/otellogrus"
+	"github.com/kanhai-syd/hailog/otellog/otellogrus"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 
 	"github.com/sirupsen/logrus"
 	"go.opentelemetry.io/otel"

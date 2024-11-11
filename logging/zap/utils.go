@@ -1,4 +1,4 @@
-// Copyright 2023 CloudWeGo Authors.
+// Copyright 2022 CloudWeGo Authors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,33 +12,39 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package slog
+package zap
 
 import (
-	"log/slog"
-
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
+	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 )
 
-// Adapt log level to otelslog level
-func tranSLevel(level logging.Level) (lvl slog.Level) {
-	switch level {
-	case logging.LevelTrace:
-		lvl = LevelTrace
-	case logging.LevelDebug:
-		lvl = slog.LevelDebug
-	case logging.LevelInfo:
-		lvl = slog.LevelInfo
-	case logging.LevelWarn:
-		lvl = slog.LevelWarn
-	case logging.LevelNotice:
-		lvl = LevelNotice
-	case logging.LevelError:
-		lvl = slog.LevelError
-	case logging.LevelFatal:
-		lvl = LevelFatal
-	default:
-		lvl = slog.LevelWarn
+// InArray check if a string in a slice
+func InArray(key ExtraKey, arr []ExtraKey) bool {
+	for _, k := range arr {
+		if k == key {
+			return true
+		}
 	}
-	return
+	return false
+}
+
+func LevelToZapLevel(level logging.Level) zapcore.Level {
+	var lvl zapcore.Level
+	switch level {
+	case logging.LevelTrace, logging.LevelDebug:
+		lvl = zap.DebugLevel
+	case logging.LevelInfo:
+		lvl = zap.InfoLevel
+	case logging.LevelWarn, logging.LevelNotice:
+		lvl = zap.WarnLevel
+	case logging.LevelError:
+		lvl = zap.ErrorLevel
+	case logging.LevelFatal:
+		lvl = zap.FatalLevel
+	default:
+		lvl = zap.WarnLevel
+	}
+	return lvl
 }

@@ -18,7 +18,7 @@ import (
 	"io"
 	"log/slog"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 	cwslog "github.com/kanhai-syd/hailog/logging/slog"
 )
 

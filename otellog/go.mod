@@ -1,19 +1,23 @@
-module github.com/kanhai-syd/hailog/telemetry
+module github.com/kanhai-syd/hailog/otellog
 
 go 1.22
 
 toolchain go1.22.2
 
-replace github.com/kanhai-syd/hailog/logging/logrus => ../log/logging/logrus
+replace github.com/kanhai-syd/hailog/logging/logrus => ../logging/logrus
 
-replace github.com/kanhai-syd/hailog/logging/slog => ../log/logging/slog
+replace github.com/kanhai-syd/hailog/logging/slog => ../logging/slog
 
-replace github.com/kanhai-syd/hailog/logging/zap => ../log/logging/zap
+replace github.com/kanhai-syd/hailog/logging/zap => ../logging/zap
 
-replace github.com/kanhai-syd/hailog/logging/zerolog => ../log/logging/zerolog
+replace github.com/kanhai-syd/hailog/logging/zerolog => ../logging/zerolog
+
+replace github.com/kanhai-syd/hailog => ../
+
+replace github.com/kanhai-syd/hailog/otellog => ./
 
 require (
-	github.com/kanhai-syd/hailog v0.0.0-20241109102407-978409ba316a
+	github.com/kanhai-syd/hailog v0.0.0-00010101000000-000000000000
 	github.com/kanhai-syd/hailog/logging/logrus v0.0.0-00010101000000-000000000000
 	github.com/kanhai-syd/hailog/logging/slog v0.0.0-00010101000000-000000000000
 	github.com/kanhai-syd/hailog/logging/zap v0.0.0-00010101000000-000000000000

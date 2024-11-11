@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 
-	cwlogrus `github.com/kanhai-syd/hailog/logging/logrus`
+	cwlogrus "github.com/kanhai-syd/hailog/logging/logrus"
 
 	"github.com/sirupsen/logrus"
 )

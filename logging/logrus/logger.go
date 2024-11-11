@@ -45,7 +45,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 
 	"github.com/sirupsen/logrus"
 )

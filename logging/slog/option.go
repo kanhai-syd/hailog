@@ -19,7 +19,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 )
 
 type Option interface {

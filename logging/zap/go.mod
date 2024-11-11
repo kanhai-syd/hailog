@@ -2,8 +2,10 @@ module github.com/kanhai-syd/hailog/logging/zap
 
 go 1.21
 
+replace github.com/kanhai-syd/hailog => ../..
+
 require (
-	github.com/kanhai-syd/hailog v0.0.0-20241109084732-f27744112296
+	github.com/kanhai-syd/hailog v0.0.0-00010101000000-000000000000
 	github.com/stretchr/testify v1.9.0
 	go.uber.org/zap v1.27.0
 )

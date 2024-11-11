@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 
 	"github.com/cloudwego/hertz/pkg/common/json"
 	"github.com/rs/zerolog"

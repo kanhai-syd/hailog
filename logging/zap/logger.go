@@ -18,7 +18,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

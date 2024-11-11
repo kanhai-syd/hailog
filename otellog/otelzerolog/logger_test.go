@@ -19,7 +19,7 @@ import (
 	"context"
 	"testing"
 
-	logging "github.com/kanhai-syd/hailog/log/logging"
+	logging "github.com/kanhai-syd/hailog/logging"
 	cwzerolog "github.com/kanhai-syd/hailog/logging/zerolog"
 
 	"github.com/rs/zerolog"

@@ -18,7 +18,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 	cwzap "github.com/kanhai-syd/hailog/logging/zap"
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/trace"

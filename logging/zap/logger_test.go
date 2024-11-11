@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
@@ -234,7 +234,6 @@ func TestWithCoreLevel(t *testing.T) {
 	logger := NewLogger(WithCoreLevel(zap.NewAtomicLevelAt(zapcore.WarnLevel)))
 	defer logger.Sync()
 
-	
 	// output to buffer
 	logging.SetLogger(logger)
 	logging.SetOutput(buf)
@@ -420,7 +419,7 @@ func BenchmarkWithExtraKeys(b *testing.B) {
 	log := NewLogger(WithExtraKeys([]ExtraKey{"requestId"}))
 	logging.SetLogger(log)
 	logging.SetOutput(buf)
-	
+
 	ctx := context.WithValue(context.Background(), ExtraKey("requestId"), "123")
 	for i := 0; i < b.N; i++ {
 		logging.CtxInfof(ctx, "normal log")

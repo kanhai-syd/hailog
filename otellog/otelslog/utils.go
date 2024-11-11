@@ -18,7 +18,7 @@ import (
 	"log/slog"
 	"strings"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 )
 
 // OtelSeverityText convert otelslog level to otel severityText

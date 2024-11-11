@@ -19,7 +19,7 @@ package zerolog
 import (
 	"testing"
 
-	"github.com/kanhai-syd/hailog/log/logging"
+	"github.com/kanhai-syd/hailog/logging"
 
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
