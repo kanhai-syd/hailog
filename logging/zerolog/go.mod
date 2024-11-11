@@ -2,11 +2,9 @@ module github.com/kanhai-syd/hailog/logging/zerolog
 
 go 1.21
 
-replace github.com/kanhai-syd/hailog => ../..
-
 require (
 	github.com/cloudwego/hertz v0.9.3
-	github.com/kanhai-syd/hailog v0.0.0-00010101000000-000000000000
+	github.com/kanhai-syd/hailog v0.0.0-20241111050534-02944a3c918f
 	github.com/rs/zerolog v1.33.0
 	github.com/stretchr/testify v1.9.0
 )

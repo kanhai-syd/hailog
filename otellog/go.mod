@@ -4,24 +4,12 @@ go 1.22
 
 toolchain go1.22.2
 
-replace github.com/kanhai-syd/hailog/logging/logrus => ../logging/logrus
-
-replace github.com/kanhai-syd/hailog/logging/slog => ../logging/slog
-
-replace github.com/kanhai-syd/hailog/logging/zap => ../logging/zap
-
-replace github.com/kanhai-syd/hailog/logging/zerolog => ../logging/zerolog
-
-replace github.com/kanhai-syd/hailog => ../
-
-replace github.com/kanhai-syd/hailog/otellog => ./
-
 require (
-	github.com/kanhai-syd/hailog v0.0.0-00010101000000-000000000000
-	github.com/kanhai-syd/hailog/logging/logrus v0.0.0-00010101000000-000000000000
-	github.com/kanhai-syd/hailog/logging/slog v0.0.0-00010101000000-000000000000
-	github.com/kanhai-syd/hailog/logging/zap v0.0.0-00010101000000-000000000000
-	github.com/kanhai-syd/hailog/logging/zerolog v0.0.0-00010101000000-000000000000
+	github.com/kanhai-syd/hailog v0.0.0-20241111050534-02944a3c918f
+	github.com/kanhai-syd/hailog/logging/logrus v0.0.0-20241111050534-02944a3c918f
+	github.com/kanhai-syd/hailog/logging/slog v0.0.0-20241111050534-02944a3c918f
+	github.com/kanhai-syd/hailog/logging/zap v0.0.0-20241111050534-02944a3c918f
+	github.com/kanhai-syd/hailog/logging/zerolog v0.0.0-20241111050534-02944a3c918f
 	github.com/rs/zerolog v1.33.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
