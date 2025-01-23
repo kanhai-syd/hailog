@@ -27,6 +27,7 @@ import (
 	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 )
 
 func stdoutProvider(ctx context.Context) func() {
@@ -128,4 +129,27 @@ func TestLogLevel(t *testing.T) {
 
 	logging.Debugf("this is a debug log %s", "msg")
 	assert.Contains(t, buf.String(), "this is a debug log")
+}
+
+func TestZapConfigLogger(t *testing.T) {
+	buf := new(bytes.Buffer)
+
+	logger := NewLogger(
+		WithCoreEnc(zapcore.NewConsoleEncoder(zap.NewDevelopmentEncoderConfig())),
+		WithCoreWs(zapcore.AddSync(&bytes.Buffer{})),
+		WithCoreLevel(zap.NewAtomicLevelAt(zap.DebugLevel)),
+		WithCustomFields("key1", "value1", "key2", "value2"),
+		WithZapOptions(zap.AddCaller()),
+	)
+	defer logger.Sync()
+
+	logger.SetOutput(buf)
+
+	assert.NotNil(t, logger)
+
+	logging.SetLogger(logger)
+	logging.Info("this is a info log")
+	
+	assert.Contains(t, buf.String(), "this is a info log")
+	assert.NotContains(t, buf.String(), "Ignored key without a value.")
 }

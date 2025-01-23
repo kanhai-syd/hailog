@@ -109,6 +109,6 @@ func GetOptions(cwZap cwZap) []cwzap.Option {
 		Ws:  cwZap.coreConfig.Ws,
 	}))
 	opions = append(opions, cwzap.WithZapOptions(cwZap.zapOpts...))
-	opions = append(opions, cwzap.WithCustomFields(cwZap.customFields))
+	opions = append(opions, cwzap.WithCustomFields(cwZap.customFields...))
 	return opions
 }
